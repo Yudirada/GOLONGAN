@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/golongan/p"
+	"github.com/yudirada/golongan/p"
 )
 
 func main() {
