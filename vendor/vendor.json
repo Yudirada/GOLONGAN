@@ -36,6 +36,12 @@
 			"revision": "7fcbc72f853b92b5720db4a6b8482be612daef24"
 		},
 		{
+			"checksumSHA1": "bZqm0m29RcRLGTMnswP7OWSBgRU=",
+			"path": "github.com/yudirada/golongan",
+			"revision": "309c7d6e6ad68078079773f4a1b56772c258c813",
+			"revisionTime": "2017-05-17T05:19:53Z"
+		},
+		{
 			"checksumSHA1": "hKZGpbFuCrkE4s1vxubKK1aFlfI=",
 			"path": "golang.org/x/net/context",
 			"revision": "d9558e5c97f85372afee28cf2b6059d7d3818919"
