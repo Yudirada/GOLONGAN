@@ -24,7 +24,7 @@ func main() {
 	//	c.HTML(http.StatusOK, "index.tmpl.html", nil)
 	//})
 
-	p.GenPageIndex(r)
+	p.RenderIndex(r)
 
 	r.Run(":" + port)
 }
