@@ -30,12 +30,14 @@
             function click_this() {
                 console.log("=====================AAA")
                 window.dataLayer = window.dataLayer || [];
+                console.log("=====================BBB")
                 window.dataLayer.push({
                     'event': 'click_from_event',
                     'eventCategory':'Clicker',
                     'eventAction':'Clicked2',
                     'eventLabel':'click_this'
                 });
+                console.log("=====================CCC")
                 return true;
             }
         </script>
