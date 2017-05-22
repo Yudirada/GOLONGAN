@@ -1,8 +1,5 @@
 <html>
     <head>
-        <script>
-
-        </script>
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -28,6 +25,18 @@
         <!-- End Google Tag Manager (noscript) -->
 
         <input type="button" id="theButton" value="CLICK ME!">
-        <input type="button" id="ppp" value="CLICK THIS!">
+        <input type="button" id="ppp" value="CLICK THIS!" onclick="return click_this()">
+        <script>
+            function click_this() {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    'event': 'click_from_event',
+                    'eventCategory':'Clicker',
+                    'eventAction':'Clicked2',
+                    'eventLabel':'click_this'
+                });
+                return true;
+            }
+        </script>
     </body>
 </html>
