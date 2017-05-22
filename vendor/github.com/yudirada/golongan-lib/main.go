@@ -8,8 +8,9 @@ import (
 	"github.com/yudirada/golongan-lib/p"
 )
 
-func run() {
+func Run() {
 	port := os.Getenv("PORT")
+	port = "4536"
 
 	if port == "" {
 		log.Fatal("$PORT must be set")
@@ -17,12 +18,10 @@ func run() {
 
 	r := gin.New()
 	r.Use(gin.Logger())
-	//router.LoadHTMLGlob("templates/*.tmpl.html")
-	//router.Static("/static", "static")
-
-	//router.GET("/", func(c *gin.Context) {
-	//	c.HTML(http.StatusOK, "index.tmpl.html", nil)
-	//})
+	baseURL := "vendor/github.com/yudirada/golongan-lib/"
+	r.LoadHTMLGlob(baseURL + "t/*.html")
+	//r.Static("/css", "css")
+	//r.Static("/script", "script")
 
 	p.RenderIndex(r)
 
